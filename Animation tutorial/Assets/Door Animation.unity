@@ -98,6 +98,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 41780291}
+  - 95: {fileID: 41780292}
   m_Layer: 0
   m_Name: Door Root
   m_TagString: Untagged
@@ -114,11 +115,28 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.98227674, z: -0, w: -0.18743677}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: -518.65, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -1.2325641, z: 0}
   m_Children:
   - {fileID: 1205199097}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!95 &41780292
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41780290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b71f06abc9d5b4639afc3fc5305ce8b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1143158864
 GameObject:
   m_ObjectHideFlags: 0
