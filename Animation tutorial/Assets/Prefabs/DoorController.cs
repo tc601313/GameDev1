@@ -5,27 +5,30 @@ public class DoorController : MonoBehaviour {
 
 
 	public Animator animator;
-	public Rect openDoorRectangle;
-	public Rect closeDoorRectangle;
 
-	void Start () {
-		animator = GetComponent<Animator> ();
-	}
-	
-
-	void OnGUI () 
+	public void OnTriggerEffect(Collider collider)
 	{
+		OpenDoor ();
+	}
 
-		if (GUI.Button (openDoorRectangle, "Open Door")) 
-		{
-			animator.SetInteger ("Door Open", 1);
-			animator.SetInteger ("Door Close", 0);
-		}
+	public void OnTriggerExit(Collider collider)
+	{
+		CloseDoor ();
+	}
 
-		if (GUI.Button (closeDoorRectangle, "Close Door"))
-		{
-			animator.SetInteger ("Door Open", 0);
-			animator.SetInteger ("Door Close", 1);
-		}
+	public void OpenDoor ()
+	{
+		animator.SetInteger ("Door Open", 1);
+		animator.SetInteger ("Door Close", 0);
+
+	}
+
+	public void CloseDoor ()
+	{
+		animator.SetInteger ("Door Open", 0);
+		animator.SetInteger ("Door Close", 1);
+
+
+
 	}
 }

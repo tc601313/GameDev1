@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000014040928324}
   - 95: {fileID: 95000011159606724}
-  - 114: {fileID: 114000011596595274}
   m_Layer: 0
   m_Name: Door Root
   m_TagString: Untagged
@@ -138,27 +137,3 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000011596595274
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010122909012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfc1d98558fb247199f189151e0f25bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 95000011159606724}
-  openDoorRectangle:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 300
-    height: 300
-  closeDoorRectangle:
-    serializedVersion: 2
-    x: 300
-    y: 0
-    width: 300
-    height: 300
